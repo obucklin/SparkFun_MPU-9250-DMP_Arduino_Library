@@ -46,6 +46,12 @@
 #define get_ms    arduino_get_clock_ms
 #define log_i     _MLPrintLog
 #define log_e     _MLPrintLog 
+#define reg_int_cb(void (*cb)(void), unsigned char port, unsigned char pin)
+#define labs( x)
+#define fabsf( x)
+#define min( a,  b) arduino_min( a,b)
+ 
+
 static inline int reg_int_cb(struct int_param_s *int_param)
 {
 		return 0;
